@@ -1,9 +1,9 @@
-import Carrusel from "./Carrusel";
+import Carrousel from "./images/Carrousel.jpg";
 
 const Main = () => {
   return(
     <div className="container-fluid carru">      
-        <Carrusel/>      
+        <Carrousel/>      
     </div>
       
   )

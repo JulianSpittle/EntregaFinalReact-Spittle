@@ -1,36 +1,32 @@
 import "./App.css";
-import Header from "./components/Header/Header";
-import NavBar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemCount from "./components/ItemCount/ItemCount";
-import Footer from "./components/Footer/Footer";
-import ItemList from "./components/ItemList/ItemList";
-import Item from "./components/Item/Item"
-import asyncMock from "./components/NavBar/asyncMock";
-import { BrowserRouter } from "react-router-dom";
+import Error404 from './components/Error404';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import Main from './components/Main';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App container-fluid">
       <BrowserRouter>
-      <Header />
-      <NavBar />
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>}/>
-        <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
-        <Route path='/item/:itemId' element={ <ItemDetailContainer />}/>
-        <Route path='*' element={<h1>404 NOT FOUND</h1>}/>
-      </Routes>
+        <Header />
+        <NavBar />
+        <Routes>
+          <Route path={"/"} element={<ItemListContainer />}></Route>
+          <Route
+            path={"/Categoria/:id"}
+            element={<ItemListContainer />}
+          ></Route>
+          <Route path={"/Item/:id"} element={<ItemDetailContainer />}></Route>
+          <Route path={"/Main"} element={<Main />}></Route>
+          <Route path={"/*"} element={<Error404 />}></Route>
+        </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }
-
-/* <ItemListContainer greeting={"ItemListContainer"} />
-      <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ',quantity)}/>
-      <ItemDetailContainer/> */
-
 export default App;
-
-

@@ -1,4 +1,4 @@
-import LogoHeader from "./assets/logoheader.png";
+import LogoHeader from "../components/images/logoheader.png";
 
 const Header = () => {
   return (
