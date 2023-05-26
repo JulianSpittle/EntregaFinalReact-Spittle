@@ -1,4 +1,13 @@
-* {
+/* Reseteo CSS */
+
+*{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.card-img-top {
+  width: 150px;
 }
