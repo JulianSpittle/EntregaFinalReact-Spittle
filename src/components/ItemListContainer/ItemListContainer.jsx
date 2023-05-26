@@ -1,12 +1,29 @@
 import { useState, useEffect } from 'react';
-import { getProducts } from '../NavBar/asyncMock';
+import { getProductByCategory } from '../NavBar/asyncMock';
 import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom'
 
 const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([])
 
+
+  //VIDEO 4
+  // const {categoryId} = useParams()
+
+  // useEffect (() => {
+  //   const asyncFunc = categoryId ? getProductByCategory : getProducts
+
+  //   asyncFunc (categoryId)
+  //     .then(response => {
+  //       setProducts(response)
+  //     })
+  //     .catch(error => {
+  //       console.error(error)
+  //     })
+  // }, [categoryId])
+
   useEffect(() => {
-    getProducts()
+    getProductByCategory()
       .then(response => {
           setProducts(response)
       })
@@ -18,6 +35,7 @@ const ItemListContainer = ({ greeting }) => {
   return (
     <div className="bg-body-secondary p-3 text-center">
       <h3>{greeting}</h3>
+      <ItemList products={products}/>
       <div className="card mb-3" style={{ maxWidth: "540px" }}>
         <div className="row g-0 align-items-center">
           <div className="col-md-4">

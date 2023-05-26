@@ -1,27 +1,178 @@
 const products = [
     {id:'1',
-    name:'uno',
-    price:1,
-    category:'uno',
+    name:'Fuente Gamemax 450w',
+    price:15999,
+    category:'Fuentes',
     img:'',
-    stock:1,
-    description:'uno'
+    stock:10,
+    description:'Fuente Gamemax 450W VP-450 78% EF 12CM Fan C/Cable2'
     },
-
-    {id:'dos',
-    name:'dos',
-    price:1,
-    category:'dos',
+    {id:'2',
+    name:'Fuente Corsair 550w',
+    price:26450,
+    category:'Fuentes',
     img:'',
-    stock:1,
-    description:'dos'
-    }
+    stock:10,
+    description:'Fuente Corsair 550W CV550 80 Plus Bronze OEM'
+    },
+    {id:'3',
+    name:'Fuente ASUS ROG STRIX 1000w',
+    price:82.960,
+    category:'Fuentes',
+    img:'',
+    stock:10,
+    description:'Fuente ASUS ROG STRIX 1000W 80 Plus Gold Full Modular 1000G'
+    },
+    {id:'4',
+    name:'Gabinete Kolink Inspire',
+    price:25700,
+    category:'Gabinetes',
+    img:'',
+    stock:10,
+    description:'Gabinete Kolink Inspire K3 RGB M-ATX Vidrio Templado'
+    },   
+    {id:'5',
+    name:'Gabinete Deepcool MATREXX',
+    price:57000,
+    category:'Gabinetes',
+    img:'',
+    stock:10,
+    description:'Gabinete Deepcool MATREXX 70 ADD-RGB 3F'
+    }, 
+    {id:'6',
+    name:'Gabinete Antec Torque',
+    price:298200,
+    category:'Gabinetes',
+    img:'',
+    stock:10,
+    description:'Gabinete Antec Torque Black/White ARGB Vidrio Templado'
+    },
+    {id:'7',
+    name:'Corsair DDR4 16GB',
+    price:41530,
+    category:'RAM',
+    img:'',
+    stock:10,
+    description:'Memoria Corsair DDR4 16GB (2x8GB) 3200MHz Vengeance LPX Black'
+    },
+    {id:'8',
+    name:'Memoria Patriot Viper DDR4 16GB',
+    price:70900,
+    category:'RAM',
+    img:'',
+    stock:10,
+    description:'Memoria Patriot Viper DDR4 16GB (2x8GB) 4000Mhz Blackout Cl19'
+    },
+    {id:'9',
+    name:'Memoria Team DDR4 16GB',
+    price:48000,
+    category:'RAM',
+    img:'',
+    stock:10,
+    description:'Memoria Team DDR4 16GB (2x8GB) 3600MHz T-Force Delta Black RGB CL14'
+    },
+    {id:'10',
+    name:'Mother ASUS ROG STRIX',
+    price:184400,
+    category:'Motherboards',
+    img:'',
+    stock:10,
+    description:'Mother ASUS ROG STRIX B550-XE Gaming Wifi AM4'
+    },
+    {id:'11',
+    name:'Mother ASUS TUF B450M',
+    price:64050,
+    category:'Motherboards',
+    img:'',
+    stock:10,
+    description:'Mother ASUS TUF B450M-PLUS II AM4'
+    },
+    {id:'12',
+    name:'Mother ASUS ROG STRIX X570-E',
+    price:210900,
+    category:'Motherboards',
+    img:'',
+    stock:10,
+    description:'Mother ASUS ROG STRIX X570-E WIFI II '
+    },
+    {id:'13',
+    name:'Placa de Video XFX RX 6700',
+    price:220550,
+    category:'Placas de video',
+    img:'',
+    stock:10,
+    description:'Placa de Video XFX Radeon RX 6700 XT CORE 12GB GDDR6 SWFT 309'
+    },
+    {id:'14',
+    name:'Placa de Video Zotac 3090',
+    price:435400,
+    category:'Placas de video',
+    img:'',
+    stock:10,
+    description:'Placa de Video Zotac GeForce RTX 3090 24GB GDDR6X Trinity'
+    },
+    {id:'15',
+    name:'Placa de Video ASUS GTX 1660',
+    price:204900,
+    category:'Placas de video',
+    img:'',
+    stock:10,
+    description:'Placa de Video ASUS GeForce GTX 1660 SUPER 6GB GDDR6 OC TUF'
+    },
+    {id:'16',
+    name:'Cooler CPU Be Quiet!',
+    price:50100,
+    category:'Coolers',
+    img:'',
+    stock:10,
+    description:'Cooler CPU Be quiet! PURE LOOP 360'
+    },
+    {id:'17',
+    name:'Cooler CPU Cooler Master',
+    price:25250,
+    category:'Coolers',
+    img:'',
+    stock:10,
+    description:'Cooler CPU Cooler Master Hyper 212 ARGB*'
+    }, 
+    {id:'18',
+    name:'Cooler CPU Silverstone',
+    price:38800,
+    category:'Coolers',
+    img:'',
+    stock:10,
+    description:'Cooler CPU Silverstone PF240 ARGB V2 Water Cooling'
+    },
+    {id:'19',
+    name:'Procesador AMD Ryzen 5 5600G',
+    price:113999,
+    category:'Procesadores',
+    img:'',
+    stock:10,
+    description:'Procesador AMD Ryzen 5 5600G 4.4GHz Turbo + Wraith Stealth Cooler'
+    },
+    {id:'20',
+    name:'Procesador AMD Ryzen 9 7900',
+    price:271100,
+    category:'Procesadores',
+    img:'',
+    stock:10,
+    description:'Procesador AMD Ryzen 9 7900 5.4GHz Turbo AM5 + AMD Wraith Prism'
+    },
+    {id:'21',
+    name:'Procesador AMD Ryzen 9 5950X',
+    price:395000,
+    category:'Procesadores',
+    img:'',
+    stock:10,
+    description:'Procesador AMD Ryzen 9 5950X 4.9GHz Turbo AM4 - No incluye Cooler'
+    },
 ]
 
-export const getProducts = () => {
+export const getProductByCategory = (categoryId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products)
-        }, 500)
-    })
-}
+            resolve(products.filter((prod) => prod.category === categoryId));
+        }, 500);
+    });
+};
