@@ -11,7 +11,7 @@ const ItemDetail = ({producto}) => {
     return (
         <div className="container-fluid divDetalle">
             <div className="row">
-                <div className="col-md-3 offset-md-3">
+                <div className="col-md-3 offset-md-3 ">
                     <img src={item.Imagen} alt={item.Nombre} className="img-fluid" />
                 </div>
                 <div className="col-md-3 text-center">

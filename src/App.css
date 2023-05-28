@@ -1,4 +1,4 @@
-/* Reseteo CSS */
+/* Reset CSS */
 
 *{
   padding: 0;
@@ -8,6 +8,143 @@
   text-decoration: none;
 }
 
-.card-img-top {
+/* Barra Navegación 2 */
+
+.Header {
+  padding: 0;
+  margin: 0;
+  height: 210px;
+}
+
+.Logo {
+  width: 200px;
+}
+
+.DivTitulo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-link-1 {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.ulRedes {
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.divHR {
+  display: flex;
+  justify-content: center;
+}
+
+.botonRedes {
+  width: 20px;
+}
+
+.form-control {
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.input-group {  
+  width: 80%;
+}
+
+.LiHrBuscar {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group-text {
+  background-color: white;
+  border: none;
+}
+
+.searchBtn {
+  width: 50px;
+}
+
+.hrBuscar {
+  color: #CE861B;
+  width: 75%;  
+}
+
+.hr {
+  color: #CE861B;
+  width: 70%;  
+}
+
+.botonCarrito {
+  width: 30px;
+}
+
+.badge {
+  color: black;
+  background-color: #E79ABF;
+}
+
+/* Main */
+
+  .carru {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.btn-agregar-carrito {
+  color: black;
+  background-color: rgba(252, 215, 9, 0.945);
+}
+
+.btn-agregar-carrito:hover{
+  background-color: rgba(252, 235, 5, 0.6);
+  transition: 200ms;
+}
+
+/* ItemListContainer */
+
+.imgCard {
   width: 150px;
 }
+
+.divDetalle {
+margin-top:10rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.tituloCardDetail {
+  font-size: 2,5rem;
+}
+
+.descripcionCardDetail {
+  font-size: 1rem;
+}
+
+.precioCardDetail {
+  font-size: 2rem;
+}
+
+/*Header*/
+
+.botonContactanos {
+  border:transparent;
+}
+
+.botonAyuda {
+  border:transparent;
+}
+
