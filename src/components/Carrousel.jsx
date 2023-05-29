@@ -1,4 +1,4 @@
-import Carrousel from "../components/images/Carrousel.jpg";
+import Carrousel1 from "./images/Carrousel.jpg";
 
 const Carrousel = () => {
   return (
@@ -27,13 +27,13 @@ const Carrousel = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={Carrousel} className="d-block w-100" alt="..." />
+          <img src={Carrousel1} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src={Carrousel} className="d-block w-100" alt="..." />
+          <img src={Carrousel1} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src={Carrousel} className="d-block w-100" alt="..." />
+          <img src={Carrousel1} className="d-block w-100" alt="..." />
         </div>
       </div>
       <button
