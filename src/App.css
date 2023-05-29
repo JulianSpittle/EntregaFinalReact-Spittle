@@ -148,3 +148,45 @@ margin-top:10rem;
   border:transparent;
 }
 
+/*NavBar*/
+
+.NavBar {
+  background-color: #f8f9fa;
+}
+
+.NavBar h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.Categories {
+  flex-grow: 1;
+}
+
+.Categories ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Categories li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.Categories li:last-child {
+  margin-right: 0;
+}
+
+.Categories a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.Categories a:hover {
+  color: #007bff;
+}
+
+.d-flex {
+  display: flex;
+}
