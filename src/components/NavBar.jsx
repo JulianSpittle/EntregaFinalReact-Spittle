@@ -14,14 +14,12 @@ const NavBar = () => {
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
           className="Categories collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
+          id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink to={"/Categoria/Placas De Video"}>Placas De Video</NavLink>

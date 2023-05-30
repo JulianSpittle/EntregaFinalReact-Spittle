@@ -1,6 +1,6 @@
 /* Reset CSS */
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-/* Barra Navegación 2 */
+/*Header*/
 
 .Header {
   margin: 0;
@@ -20,22 +20,34 @@
   background-color: rgba(252, 215, 9, 0.945);
 }
 
-.btn-agregar-carrito:hover{
+.btn-agregar-carrito:hover {
   background-color: rgba(252, 235, 5, 0.6);
   transition: 200ms;
+}
+
+.botonContactanos {
+  border: transparent;
+}
+
+.botonAyuda {
+  border: transparent;
+}
+
+.divCards {
+  width: 275px;
 }
 
 /* ItemListContainer */
 
 .divDetalle {
-margin-top:10rem;
-  font-family: 'Poppins', sans-serif;
+  margin-top: 10rem;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   color: black;
 }
 
 .tituloCardDetail {
-  font-size: 2,5rem;
+  font-size: 2, 5rem;
 }
 
 .descripcionCardDetail {
@@ -46,31 +58,10 @@ margin-top:10rem;
   font-size: 2rem;
 }
 
-.cardHome{
-  text-align: center;
-}
-/*Header*/
-
-.botonContactanos {
-  border:transparent;
-}
-
-.botonAyuda {
-  border:transparent;
-}
-
-.divCards{
-  width:275px;
-}
-
 /*NavBar*/
 
-.NavBar {
-  background-color: #f8f9fa;
-}
-
 .NavBar h3 {
-  color:black;
+  color: black;
   margin: 0;
   font-size: 1.5rem;
 }
@@ -107,6 +98,10 @@ margin-top:10rem;
   display: flex;
 }
 
-.Main{
-  height:100%;
+.text-align-webkit-center {
+  text-align: -webkit-center;
+}
+
+.text-align-left {
+  text-align: left;
 }

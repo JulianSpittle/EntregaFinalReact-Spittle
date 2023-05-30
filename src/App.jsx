@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-body-secondary Main">
+    <div className="bg-body-secondary">
       <BrowserRouter>
         <Header />
           <Routes>

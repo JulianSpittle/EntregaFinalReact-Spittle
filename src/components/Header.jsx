@@ -1,5 +1,5 @@
 import LogoHeader from "../components/images/logoheader.png";
-import NavBar from "./NavBar"
+import NavBar from "./NavBar";
 
 const Header = () => {
   return (
@@ -9,7 +9,9 @@ const Header = () => {
           <img src={LogoHeader} alt={"Logo Header"} width={48} />
         </div>
         <div className="col-md-6 text-end">
-          <button href="#" className="botonContactanos text-dark bg-body-secondary">
+          <button
+            href="#"
+            className="botonContactanos text-dark bg-body-secondary">
             Contactanos
           </button>{" "}
           |{" "}
