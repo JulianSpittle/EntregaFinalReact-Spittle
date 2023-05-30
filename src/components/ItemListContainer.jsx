@@ -20,7 +20,7 @@ const ItemListContainer = () => {
   }, [id]);
 
   return (
-    <div className="container-fluid d-flex">
+    <div className="container-fluid d-flex justify-content-center">
       <div className="row">
         <div className="col-12">
         <ItemList productos={items} />

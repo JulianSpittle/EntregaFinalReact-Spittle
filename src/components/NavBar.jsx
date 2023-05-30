@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
+    <div className="row">
     <nav className="NavBar navbar-expand-lg bg-body-secondary">
       <div className="container-fluid">
         <NavLink to="/"> <h3>Core Builds</h3> </NavLink>
@@ -50,6 +51,7 @@ const NavBar = () => {
         </div>
       </div>
     </nav>
+    </div>
   );
 };
 

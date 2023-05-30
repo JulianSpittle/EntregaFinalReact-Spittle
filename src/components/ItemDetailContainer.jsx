@@ -20,9 +20,9 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   return (
-    <>
+    <div>
       <ItemDetail producto={item} />
-    </>
+    </div>
   );
 };
 
