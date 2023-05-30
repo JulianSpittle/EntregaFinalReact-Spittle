@@ -55,7 +55,7 @@
   },
   {
     "id":7,
-    "Nombre":"Corsair DDR4 16GB",
+    "Nombre":"Memoria Corsair DDR4 16GB",
     "Precio":41530,
     "Categoria":"Memorias RAM",
     "Imagen":"https://i.ibb.co/F4qLyq5/compragamer-Imganen-general-9535-Memoria-Corsair-DDR4-16-GB-2x8-GB-3200-MHz-Vengeance-LPX-Black-c80b.jpg",
@@ -64,7 +64,7 @@
   },
   {
     "id":8,
-    "Nombre":"Patriot Viper DDR4 16GB",
+    "Nombre":"Memoria Patriot Viper DDR4 16GB",
     "Precio":70900,
     "Categoria":"Memorias RAM",
     "Imagen":"https://i.ibb.co/ZT7McQb/compragamer-Imganen-general-30294-Memoria-Patriot-Viper-DDR4-16-GB-2x8-GB-4000-Mhz-Blackout-Cl19-20c.jpg",
@@ -73,7 +73,7 @@
   },
   {
     "id":9,
-    "Nombre":"Team DDR4 16GB",
+    "Nombre":"Memoria Team DDR4 16GB",
     "Precio":48000,
     "Categoria":"Memorias RAM",
     "Imagen":"https://i.ibb.co/HdPCLxv/compragamer-Imganen-general-34063-Memoria-Team-DDR4-16-GB-2x8-GB-3600-MHz-T-Force-Delta-Black-RGB-CL.jpg",

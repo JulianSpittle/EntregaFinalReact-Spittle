@@ -16,11 +16,11 @@
   height: 210px;
 }
 
-.botonCarrito {
-  width: 30px;
-}
-
 /* Main */
+
+.card{
+  width:250px;
+}
 
   .carru {
   display: flex;
@@ -83,6 +83,7 @@ margin-top:10rem;
 }
 
 .NavBar h3 {
+  color:black;
   margin: 0;
   font-size: 1.5rem;
 }

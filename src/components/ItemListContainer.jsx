@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
-  const { id } = useParams();
+  const {id} = useParams();
 
   useEffect(() => {
     const promesa = new Promise((resolve) => {
@@ -16,13 +16,15 @@ const ItemListContainer = () => {
 
     promesa.then(data => {
       setItems(data);
-    })
+    });
   }, [id]);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid d-flex">
       <div className="row">
+        <div className="col-12">
         <ItemList productos={items} />
+        </div>
       </div>
     </div>
   );
