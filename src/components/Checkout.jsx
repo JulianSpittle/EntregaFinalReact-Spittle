@@ -24,7 +24,7 @@ const Checkout = () => {
         }
 
         const buyer = {name:nombre, phone:telefono, email:email}
-        const items = cart.map(item => ({id:item.id, title:item.titulo, price:item.precio, quantity:item.quantity}));
+        const items = cart.map(item => ({id:item.id, title:item.Nombre, price:item.Precio, cantidad:item.cantidad}));
         const fecha = new Date();
         const date = `${fecha.getFullYear()}-${fecha.getMonth()+1}-${fecha.getDate()} ${fecha.getHours()}:${fecha.getMinutes()}`;
         const total = sumTotal();
@@ -68,10 +68,10 @@ const Checkout = () => {
                             {
                                 cart.map(item => (
                                     <tr key={item.id}>
-                                        <td><img src={item.imagen} alt={item.titulo} width={80} /></td>
-                                        <td className="align-middle">{item.titulo}</td>
-                                        <td className="align-middle">{item.quantity} x ${item.precio}</td>
-                                        <td className="align-middle text-center">${item.quantity * item.precio}</td>
+                                        <td><img src={item.Imagen} alt={item.Nombre} width={80} /></td>
+                                        <td className="align-middle">{item.Nombre}</td>
+                                        <td className="align-middle">{item.cantidad} x ${item.Precio}</td>
+                                        <td className="align-middle text-center">${item.cantidad * item.Precio}</td>
                                     </tr>
                                 ))
                             }

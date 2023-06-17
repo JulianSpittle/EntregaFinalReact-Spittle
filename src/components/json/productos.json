@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id":1,
     "Nombre":"Fuente Gamemax 450w",
     "Precio": 15999,
     "Categoria":"Fuentes",
@@ -20,7 +20,7 @@
   {
     "id":3,
     "Nombre":"Fuente ASUS ROG STRIX 1000w",
-    "Precio":82.96,
+    "Precio":82960,
     "Categoria":"Fuentes",
     "Imagen":"https://i.ibb.co/pj4PZdN/compragamer-Imganen-general-33006-Fuente-ASUS-ROG-STRIX-1000-W-80-Plus-Gold-Full-Modular-1000-G-8c2a.jpg",
     "Stock":10,

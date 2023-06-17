@@ -1,7 +1,6 @@
 import facebook from "./images/facebook.svg";
 import twitter from "./images/twitter.svg";
 import instagram from "./images/instagram.svg";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -18,9 +17,9 @@ const Footer = () => {
                         <h6>Acerca de CoreBuilds</h6>    
                     </div>
                     <div className="col-md-4 text-end">
-                        <Link to={"https://twitter.com/Nike"} className="me-1"><img src={twitter} alt={"Twitter"} width={32} /></Link>
-                        <Link to={"https://www.facebook.com/nike"} className="me-1"><img src={facebook} alt={"Facebook"} width={32} /></Link>
-                        <Link to={"https://www.instagram.com/nike/"} className="me-1"><img src={instagram} alt={"Instagram"} width={32} /></Link>
+                        <img className="me-1" src={twitter} alt={"Twitter"} width={32} />
+                        <img className="me-1" src={facebook} alt={"Facebook"} width={32} />
+                        <img className="me-1" src={instagram} alt={"Instagram"} width={32} />
                     </div>
                 </div>
             </div>

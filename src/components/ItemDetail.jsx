@@ -7,7 +7,7 @@ const ItemDetail = ({ producto }) => {
   const [item, setItem] = useState({});
 
 const onAdd= (quantity) => {
-  addItem(item, quantity);
+  addItem(item, quantity)
 }
 
   useEffect(() => {
