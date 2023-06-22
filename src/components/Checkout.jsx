@@ -30,7 +30,7 @@ const Checkout = () => {
         const total = sumTotal();
         const order = {buyer:buyer, items:items, date:date, total:total};
 
-        // Insertar un Documento en Firestore
+        // Inserta un Documento en Firestore con la orden
         const db = getFirestore();
         const OrdersCollection = collection(db, "orders");
         addDoc(OrdersCollection, order).then(resultado => {
