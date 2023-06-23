@@ -12,7 +12,7 @@ import ThankYou from "./components/ThankYou";
 
 function App() {
   return (
-    <div className="bg-body-secondary">
+    <div className="main bg-body-secondary">
       <CartContextProvider>
       <BrowserRouter>
         <Header />

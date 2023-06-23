@@ -28,7 +28,7 @@ const ItemListContainer = () => {
 
   return (
     <div className="container-fluid d-flex justify-content-center">
-      <div className="row">
+      <div className="listcontainer row">
         <div className="col-12">
         {loading ? <Loading /> : <ItemList productos={items} />}
         </div>

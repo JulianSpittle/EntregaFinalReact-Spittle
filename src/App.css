@@ -8,6 +8,18 @@
   text-decoration: none;
 }
 
+/*Main*/
+.main {
+  padding: 5rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom:0;
+}
+
+.listcontainer {
+  display: flex;
+  justify-content: center;
+}
+
 /*Header*/
 
 .Header {
@@ -23,7 +35,19 @@
   border: transparent;
 }
 
-.divCards {
+.cardHome{
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.link-img-container {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.card-img-top {
   width: 275px;
 }
 
@@ -48,29 +72,35 @@
   font-size: 2rem;
 }
 
+/*ItemCount*/
+.btnAgregar,.btnFinalizar{
+  margin-top:1rem;
+}
+
 /*NavBar*/
 
-.NavBar h3 {
+.titulo{
   color: black;
   margin: 0;
   font-size: 1.5rem;
+  text-decoration:none;
 }
 
-.Categories li {
-  display: inline-block;
-  margin-right: 10px;
+.categories {
+  display:flex;
+  justify-content: center;
 }
 
-.Categories li:last-child {
-  margin-right: 0;
+.nav-item{
+  padding-right: 2rem;
 }
 
-.Categories a {
+.categories a {
   text-decoration: none;
   color: #212529;
 }
 
-.Categories a:hover {
+.categories a:hover {
   color: #898b0e;
 }
 
@@ -78,10 +108,10 @@
   display: flex;
 }
 
-.text-align-webkit-center {
-  text-align: -webkit-center;
-}
+/*Footer*/
 
-.text-align-left {
-  text-align: left;
+.footer{
+  display:flex;
+  justify-content: space-around;
+
 }
