@@ -48,7 +48,7 @@ const Checkout = () => {
                 <div className="col-md-5 offset-md-1">
                     <form>
                         <div className="mb-3">
-                            <label className="form-label">Nombre</label>
+                            <label className="form-label">Nombre y Apellido</label>
                             <input type="text" className="form-control" onInput={(e) => {setNombre(e.target.value)}} />
                         </div>
                         <div className="mb-3">
